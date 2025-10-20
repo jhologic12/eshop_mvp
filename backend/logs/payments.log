@@ -1,0 +1,5 @@
+2025-10-17 12:38:13 | INFO     | 🔹 Inicio de checkout para usuario: jospino@yopmail.com
+2025-10-17 12:38:13 | INFO     | 🛒 Total del carrito: $360,000.00 (1 productos)
+2025-10-17 12:38:13 | INFO     | 📡 Validando tarjeta de crédito en Mock Payment Service...
+2025-10-17 12:38:13 | ERROR    | ❌ Error validando tarjeta: Client error '422 Unprocessable Content' for url 'http://127.0.0.1:8001/cards/validate'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422

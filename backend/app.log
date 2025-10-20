@@ -1,0 +1,77 @@
+2025-10-17 13:33:25,332 - eshop_logger - INFO - Producto agregado al carrito: Mouse
+2025-10-17 14:47:01,607 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 14:47:03,681 - eshop_logger - WARNING - Validaci�n de tarjeta fallida: 404 Client Error: Not Found for url: http://localhost:8001/validate
+2025-10-17 14:48:32,410 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 14:48:34,482 - eshop_logger - WARNING - Validaci�n de tarjeta fallida: 404 Client Error: Not Found for url: http://localhost:8001/validate
+2025-10-17 15:02:16,209 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:02:18,280 - eshop_logger - WARNING - Validaci�n de tarjeta fallida: 422 Client Error: Unprocessable Content for url: http://localhost:8001/cards/validate
+2025-10-17 15:27:13,913 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:27:18,025 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 15:39:04,666 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:39:08,780 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 15:44:40,293 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:44:44,447 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 15:45:15,131 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:45:19,207 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 15:56:05,294 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:56:09,436 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 15:56:27,947 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:56:32,027 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 15:59:38,462 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 15:59:42,585 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 16:01:13,403 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:01:17,541 - eshop_logger - INFO - Payload de pago antes de enviar: <Response [400]>
+2025-10-17 16:02:48,592 - eshop_logger - WARNING - Pago rechazado: 
+2025-10-17 16:04:15,255 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:04:17,336 - eshop_logger - WARNING - Validaci�n de tarjeta fallida: cannot access local variable 'payment_resp' where it is not associated with a value
+2025-10-17 16:05:47,403 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:05:49,458 - eshop_logger - INFO - Payload de pago antes de enviar: {'card_number': '4999999999999999', 'account_uuid': 'efd17a65-48a8-4547-8a48-c81baae595f2', 'account_number': '45454545454545'}
+2025-10-17 16:40:10,130 - eshop_logger - WARNING - Validaci�n de tarjeta fallida: 
+2025-10-17 16:41:12,750 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:41:14,823 - eshop_logger - INFO - Payload de pago antes de enviar: {'card_number': '4999999999999999', 'account_uuid': 'efd17a65-48a8-4547-8a48-c81baae595f2', 'account_number': '45454545454545'}
+2025-10-17 16:41:41,118 - eshop_logger - WARNING - Validaci�n de tarjeta fallida: 
+2025-10-17 16:42:06,456 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:42:08,503 - eshop_logger - INFO - Payload de pago antes de enviar: efd17a65-48a8-4547-8a48-c81baae595f2
+2025-10-17 16:43:28,335 - eshop_logger - WARNING - Validaci�n de tarjeta fallida: 
+2025-10-17 16:44:37,178 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:44:41,248 - eshop_logger - INFO - Payload de pago antes de enviar: <Response [400]>
+2025-10-17 16:54:16,686 - eshop_logger - WARNING - Pago rechazado: 
+2025-10-17 16:54:35,766 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:54:37,843 - eshop_logger - INFO - Payload de pago antes de enviar: {'account_uuid': 'efd17a65-48a8-4547-8a48-c81baae595f2', 'amount': 360000.0, 'description': 'Mouse x2'}
+2025-10-17 16:55:52,553 - eshop_logger - WARNING - Pago rechazado: 
+2025-10-17 16:56:34,843 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 16:56:38,981 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 17:00:31,225 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 17:00:35,330 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 17:02:11,514 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 17:02:15,620 - eshop_logger - INFO - Payload de pago antes de enviar: <Response [400]>
+2025-10-17 17:08:55,325 - eshop_logger - WARNING - Pago rechazado: 
+2025-10-17 17:09:08,227 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 17:09:12,319 - eshop_logger - INFO - Payload de pago enviado: {'account_uuid': 'efd17a65-48a8-4547-8a48-c81baae595f2', 'amount': 360000.0, 'description': 'Mouse x2'}
+2025-10-17 17:09:12,319 - eshop_logger - INFO - URL de pago: http://localhost:8001/payments
+2025-10-17 17:09:12,319 - eshop_logger - INFO - Status code previo a raise: 400
+2025-10-17 17:09:12,320 - eshop_logger - INFO - Respuesta del mock: {"detail":"Saldo insuficiente"}
+2025-10-17 17:09:12,321 - eshop_logger - WARNING - Pago rechazado: 400 Client Error: Bad Request for url: http://localhost:8001/payments/
+2025-10-17 17:18:00,129 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 17:18:04,235 - eshop_logger - INFO - Payload de pago enviado: {'account_uuid': 'bf8d7175-1d7e-4f60-a8fd-69a6f3d3a71e', 'amount': 360000.0, 'description': 'Mouse x2'}
+2025-10-17 17:18:04,235 - eshop_logger - INFO - URL de pago: http://localhost:8001/payments
+2025-10-17 17:18:04,236 - eshop_logger - INFO - Status code previo a raise: 200
+2025-10-17 17:18:04,236 - eshop_logger - INFO - Respuesta del mock: {"payment_uuid":"78672b25-9f23-47b6-af5f-1f63c2584501","account_uuid":"bf8d7175-1d7e-4f60-a8fd-69a6f3d3a71e","amount":360000.0,"description":"Mouse x2","status":"aprobado"}
+2025-10-17 17:18:04,240 - eshop_logger - INFO - Stock actualizado para Mouse: ahora 8 unidades
+2025-10-17 17:18:04,253 - eshop_logger - INFO - Stock actualizado correctamente para usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad
+2025-10-17 17:18:04,256 - eshop_logger - ERROR - Error al actualizar stock o vaciar carrito: remove_cart_item() missing 1 required positional argument: 'item_id'
+2025-10-17 17:24:40,148 - eshop_logger - INFO - Usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad inicia checkout con monto 360000.0
+2025-10-17 17:24:44,298 - eshop_logger - INFO - Stock actualizado para Mouse: ahora 6 unidades
+2025-10-17 17:24:44,307 - eshop_logger - INFO - Stock actualizado correctamente para usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad
+2025-10-17 17:24:44,327 - eshop_logger - INFO - Carrito eliminado para usuario 692e1a09-8f8f-451c-b14b-5e1f8e190cad
+2025-10-17 17:24:44,340 - eshop_logger - INFO - Stock actualizado y carrito vaciado para user_id=692e1a09-8f8f-451c-b14b-5e1f8e190cad
+2025-10-17 17:24:44,342 - eshop_logger - INFO - Pago exitoso para user_id=692e1a09-8f8f-451c-b14b-5e1f8e190cad, total=360000.0, cuenta=bf8d7175-1d7e-4f60-a8fd-69a6f3d3a71e
+2025-10-17 17:37:32,854 - eshop_logger - INFO - Producto agregado al carrito: Mouse
+2025-10-17 18:37:50,143 - eshop_logger - WARNING - Pago fallido: Expecting value: line 1 column 1 (char 0)
+2025-10-17 18:52:00,666 - eshop_logger - INFO - Respuesta cruda del mock: 
+2025-10-17 18:52:00,666 - eshop_logger - WARNING - Pago fallido: Expecting value: line 1 column 1 (char 0)
+2025-10-17 18:53:44,059 - eshop_logger - WARNING - Pago fallido: Expecting value: line 1 column 1 (char 0)
+2025-10-17 18:58:40,993 - eshop_logger - WARNING - Pago fallido: Expecting value: line 1 column 1 (char 0)
+2025-10-17 19:07:49,130 - eshop_logger - WARNING - Respuesta no es JSON: 
+2025-10-17 19:07:49,131 - eshop_logger - INFO - Respuesta cruda del mock: {}
+2025-10-17 19:07:49,131 - eshop_logger - WARNING - Pago fallido: 400: Pago rechazado: Error desconocido

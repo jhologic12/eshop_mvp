@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  backend_test:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: eshop_backend_test
+    env_file: ./backend/.env.test
+    environment:
+      - ENVIRONMENT=test
+      - DATABASE_URL=sqlite:///./test.db
+    volumes:
+      - ./backend/app:/app/app
+    command: >
+      pytest -v --disable-warnings
+    depends_on:
+      - db_test
+
+  db_test:
+    image: postgres:15
+    container_name: eshop_db_test
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: eshop_test
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      retries: 5
+    volumes:
+      - postgres_data_test:/var/lib/postgresql/data
+
+volumes:
+  postgres_data_test:
