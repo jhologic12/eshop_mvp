@@ -6,7 +6,8 @@ class ProductInCart(BaseModel):
     name: str
     quantity: int
     price: float
-
+    image_url: Optional[str] = None
+    
 class CheckoutResponse(BaseModel):
     id: str
     message: str

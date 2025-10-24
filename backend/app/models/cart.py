@@ -22,3 +22,5 @@ class CartItem(Base):
     # Relaciones
     user = relationship("User", back_populates="cart_items")
     product = relationship("Product", back_populates="cart_items")
+
+    

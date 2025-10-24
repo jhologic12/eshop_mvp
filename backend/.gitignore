@@ -1,0 +1,16 @@
+# Ignorar archivos temporales y de sistema
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos temporales de Word y documentos no deseados
+*.docx
+~$*
+
+# Entornos virtuales
+venv/
+.env
+
+# Otros temporales
+*.log

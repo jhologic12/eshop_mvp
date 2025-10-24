@@ -63,9 +63,11 @@ def process_checkout(user: User, card_data: dict, db: Session):
                 PurchasedProduct(
                     product_id=product.uuid,
                     product_name=product.name,
+                    image_url=product.image_thumbnail , # ✅ sin comillas
                     quantity=item.quantity,
                     price=product.price,
                     subtotal=round(product.price * item.quantity, 2)
+                    
                 )
             )
 

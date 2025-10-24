@@ -14,7 +14,7 @@ class CartItemDetail(BaseModel):
     quantity: int
     price: float
     total_price: float
-
+    image_url: Optional[str] = None  # <-- nueva propiedad
     class Config:
         from_attributes = True  # Pydantic v2
 
@@ -30,6 +30,6 @@ class CartItemResponse(BaseModel):
     price: float
     quantity: int
     subtotal: float
-
+    image_url: Optional[str] = None  # <-- nueva propiedad
     class Config:
         from_attributes = True  # Reemplaza 'orm_mode' en Pydantic v2

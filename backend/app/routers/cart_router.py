@@ -68,9 +68,11 @@ def list_cart_items_endpoint(
             "price": item.product.price,
             "quantity": item.quantity,
             "subtotal": item.product.price * item.quantity,
+           "image_url": item.product.image_thumbnail,  # <--- aquí usamos el campo existente
         }
         for item in items
     ]
+
 
 # -------------------------------------
 # 🔹 Actualizar cantidad

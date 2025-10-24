@@ -1,12 +1,13 @@
 from pydantic import BaseModel, Field
 from typing import List, Annotated
-
+from typing import Optional  # ✅ Asegúrate de importar Optional
 class PurchasedProduct(BaseModel):
     product_id: str
     product_name: str
     quantity: int
     price: float
     subtotal: float
+    image_url: Optional[str] = None
 
 # 🔹 Petición del usuario para procesar un pago con tarjeta
 class PaymentRequest(BaseModel):
