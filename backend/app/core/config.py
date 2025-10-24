@@ -30,4 +30,4 @@ def get_settings() -> Settings:
 settings = Settings()
 
 # URL base del servicio de mock de pagos
-MOCK_PAYMENT_URL = "http://localhost:8001"
+MOCK_PAYMENT_URL = os.getenv("MOCK_PAYMENT_URL", "http://127.0.0.1:8001")

@@ -8,11 +8,12 @@ from app.schemas.payment_schema import PaymentRequest
 from app.schemas.payment_schema import PurchasedProduct
 import httpx
 import logging
+from app.core.config import MOCK_PAYMENT_URL
 
 router = APIRouter(prefix="/payments", tags=["Payments"])
 logger = logging.getLogger(__name__)
 
-MOCK_PAYMENT_URL = "http://localhost:8001"  # URL de tu mock externo
+
 
 # Para validar la tarjeta
 validate_url = f"{MOCK_PAYMENT_URL}/cards/validate"

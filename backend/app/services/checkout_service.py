@@ -6,8 +6,8 @@ from app.models.product import Product
 import requests
 from app.schemas.payment_schema import PurchasedProduct
 from app.models.cart import CartItem
+from app.core.config import MOCK_PAYMENT_URL
 
-MOCK_PAYMENT_URL = "http://127.0.0.1:8001"
 
 
 def process_checkout(user: User, card_data: dict, db: Session):
