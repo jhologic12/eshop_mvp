@@ -6,9 +6,10 @@ from app.models.product import Product
 import requests
 from app.schemas.payment_schema import PurchasedProduct
 from app.models.cart import CartItem
-from app.core.config import MOCK_PAYMENT_URL
 
+from app.core.config import settings
 
+MOCK_PAYMENT_URL = settings.mock_payment_url
 
 def process_checkout(user: User, card_data: dict, db: Session):
     """
@@ -57,11 +58,11 @@ def process_checkout(user: User, card_data: dict, db: Session):
     purchased_items = []
     
     for item in cart_items:
-        product = db.query(Product).filter(Product.uuid == item.product_uuid).first()
+        product = db.query(Product).filter(Product.id == item.product_id).first()
         if product:
             purchased_items.append(
                 PurchasedProduct(
-                    product_id=product.uuid,
+                    product_id=str(product.id),
                     product_name=product.name,
                     image_url=product.image_thumbnail , # ✅ sin comillas
                     quantity=item.quantity,

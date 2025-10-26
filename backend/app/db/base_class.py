@@ -1,4 +1,3 @@
-# backend/app/db/base_class.py
 import uuid
 from sqlalchemy import Column, String
 from sqlalchemy.orm import declarative_base

@@ -16,7 +16,7 @@ def add_to_cart(user_uuid: str, product_uuid: str, quantity: int, price: float, 
     else:
         item = CartItem(
             user_uuid=user_uuid,
-            product_uuid=product_uuid,
+            product_id=item.product_id,
             quantity=quantity,
             price=price
         )
@@ -44,24 +44,11 @@ def remove_cart_item(user_uuid: str, product_uuid: str, db: Session):
     db.commit()
 
 def get_cart_total(user_uuid: str, db: Session) -> float:
-    """
-    Calcula el total del carrito del usuario sumando (precio * cantidad) de cada producto.
-    """
     items = db.query(CartItem).filter(CartItem.user_uuid == user_uuid).all()
     if not items:
         return 0.0
 
-    total = 0.0
-    for item in items:
-        product = db.query(Product).filter(Product.uuid == item.product_uuid).first()
-        if product:
-            total += product.price * item.quantity
-        else:
-            raise HTTPException(
-                status_code=404, 
-                detail=f"Producto con UUID {item.product_uuid} no encontrado"
-            )
-
+    total = sum((item.product.price * item.quantity) for item in items if item.product)
     return round(total, 2)
 
 def clear_cart(user_uuid: str, db: Session) -> None:
@@ -82,7 +69,7 @@ def get_cart_items(user_uuid: str, db: Session):
     items = db.query(CartItem).filter(CartItem.user_uuid == user_uuid).all()
     result = []
     for item in items:
-        product = db.query(Product).filter(Product.uuid == item.product_uuid).first()
+        product = db.query(Product).filter(Product.id == item.product_id).first()
         if product:
             result.append({
                 "product_id": product.id,

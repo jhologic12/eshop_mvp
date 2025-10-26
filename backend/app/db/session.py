@@ -1,14 +1,14 @@
-# app/db/session.py
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from app.core.config import settings
 
-# Configura la URL de conexión — SQLite por defecto
-SQLALCHEMY_DATABASE_URL = "sqlite:///./app.db"
+# Usa la URL de PostgreSQL desde config
+SQLALCHEMY_DATABASE_URL = settings.database_url
 
 # Crea el motor de conexión
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,
-    connect_args={"check_same_thread": False}  # Necesario para SQLite
+    SQLALCHEMY_DATABASE_URL
+    # No necesitamos connect_args para PostgreSQL
 )
 
 # Crea la sesión de base de datos

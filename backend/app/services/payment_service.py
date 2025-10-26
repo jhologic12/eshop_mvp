@@ -8,7 +8,9 @@ from app.schemas.payment_schema import PaymentRequest
 from app.schemas.payment_schema import PurchasedProduct
 import httpx
 import logging
-from app.core.config import MOCK_PAYMENT_URL
+
+from app.core.config import settings
+MOCK_PAYMENT_URL = settings.mock_payment_url
 
 router = APIRouter(prefix="/payments", tags=["Payments"])
 logger = logging.getLogger(__name__)

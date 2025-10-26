@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional, Dict
+from uuid import UUID
 
 
 # 🔹 Esquema base para productos
@@ -30,11 +31,11 @@ class ProductUpdate(BaseModel):
 
 # 🔹 Esquema de respuesta
 class ProductResponse(ProductBase):
-    uuid: str
+    id: UUID  # acepta directamente UUID
     image_small: Optional[str] = None
     image_thumbnail: Optional[str] = None
     image_medium: Optional[str] = None
     #images: Optional[Dict[str, str]] = {}
 
     class Config:
-        from_attributes = True  # Pydantic v2 reemplaza orm_mode
+        orm_mode = True  # Pydantic v2 reemplaza orm_mode
