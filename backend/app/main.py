@@ -13,7 +13,7 @@ FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
 origins = [
     "https://tienda-virtual-e-shop.onrender.com",  # tu frontend
     "http://localhost:5173"  # para desarrollo local
-]
+] 
 
 app = FastAPI(title="E-Shop MVP Backend")
 
