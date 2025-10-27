@@ -10,6 +10,11 @@ import os
 # URL del frontend (local o producción)
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
 
+origins = [
+    "https://tienda-virtual-e-shop.onrender.com",  # tu frontend
+    "http://localhost:5173"  # para desarrollo local
+]
+
 app = FastAPI(title="E-Shop MVP Backend")
 
 # 🔹 Crear tablas al iniciar la app
@@ -30,10 +35,10 @@ else:
 # 🔹 Configuración CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_URL],
+    allow_origins=origins,   # Permite estos orígenes
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],     # Permite GET, POST, PUT, DELETE...
+    allow_headers=["*"],     # Permite todos los headers
 )
 
 # 🔹 Incluir todos los routers
